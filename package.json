@@ -34,7 +34,7 @@
     "morgan": "^1.10.0"
   },
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node index.js",
     "seed:dev": "node seeds.js",
     "format": "prettier --write \"**/*.js\" ",
     "generate:resource:document": "hygen generate document-resource",
@@ -43,5 +43,8 @@
     "postadd:property:object": "npm run format",
     "add:property:document": "hygen property add-to-document",
     "postadd:property:document": "npm run format"
+  },
+  "engines": {
+    "node": "18.20.8"
   }
 }
